@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b758529ce.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family:'Sono', sans-serif;; */
+}
+
+
+header{
+    height:20vh;
+    display:flex;
+    background-color: #ffff;
+    padding-left: 10vh;
+    align-items: center;
+
+}
+header nav ul{
+    padding-left: 30vh;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+header nav ul li{
+    list-style: none;
+    margin:0 20px;
+    display: inline-block;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(0,0,0);
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover{
+    text-decoration: black underline;
+    color:#47873d;
+}
+
+
+
+header .lines{
+    width:30px;
+    height:9px;
+    padding-left:50vh;
+}
+
+
+
+header .lines .line1{
+    background-color:#47873d;
+    width:30px;
+    height:2px;
+}
+
+header a:hover{
+    cursor: pointer;
+}
+
+
+header .lines :hover{
+    cursor:pointer;
+    transform: scale(.5, 1);
+}
+header .lines .line2{
+    background-color:#47873d;
+    width:30px;
+    margin-top:5px;
+    height:2px;
+}
+
+
+
+
+main .main1{
+    height:100vh;
+    background-image: linear-gradient(rgba(71, 135, 61,.5),rgba(71, 135, 61,.7)), url(https://www.pixelstalk.net/wp-content/uploads/images6/Garden-Wallpaper-HD-Free-download.jpg);
+    /* background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Garden-Wallpaper-HD-Free-download.jpg"); */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 6vh;
+    font-weight: 900;
+}
+
+main .main2{
+    padding-top: 30vh;
+    height:70vh;
+    padding-left:100px;
+}
+
+
+main .main2 .design1{
+    
+    display: inline-block;
+    width:30vw;
+}
+
+
+main .main2 .design1 p{
+    width:200px;
+    color:#47873d;
+}
+
+main .main2 .design1 .p2{
+    margin-top: 30px;
+    font-weight: bolder;
+}
+main .main2 .design1 .p2 i{
+    color:#47873d;
+    cursor: pointer;
+    font-size:15px;
+    transition: all .2s;
+}
+main .main2 .design1 .p2 i:hover{
+    padding-left: 10px;
+    transform: scale(2, .8);
+    color:darkgreen;
+}
+
+main .main2 .design1 a .x{
+    margin:10px 0 10px 0;
+    height:3px;
+    width:250px;
+    background-color: #47873d;
+    transition: all .2s;
+}
+
+
+main .main2 .design1 a .x:hover{
+    transform:scale(0, 0);
+}
+
+main .main2 h1{
+    border-top:2px solid gray;
+    padding: 30px 70px 20px 5px;
+}
+
+
+
+main .main2 .design2{
+    width:40vw;
+    margin-right:15vw;
+    float:right;
+    text-align: justify;
+}
+
+
+main .main2 .design2 .p1{
+    margin-bottom:20px;
+    font-weight: 600;
+}
+
+.main3{
+    height:100vh;
+    background-color: #47873d;
+}
+
+.main3 .left{
+    color:white;
+    width:40vw;
+    display: inline-block;
+    font-size: xx-large;
+    padding-left:10vw;
+    padding-top:10vh;
+}
+
+.main3 .right{
+    width:40vw;
+    padding-right:10vw;
+    color:white;
+    float:right;
+    margin-top: 10vh;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.main3 .right p{
+    letter-spacing: 1px;
+    font-size: larger;
+}
+
+.main3 .right .down-right{
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns   :auto auto;
+}
+
+.main3 .right .down-right .abc{
+    display: inline-block;
+    margin-right:10px;
+}
+
+
+.main3 .right .down-right .abc h1,p,a{
+    padding-bottom:10px;    
+}
+
+.main3 .right .down-right .def h1,p,a{
+    padding-bottom:10px;    
+}
+
+.main3 .right .down-right .def{
+    float:right;
+}
+
+.main3 .right .down-right a .x{
+    margin:10px 0 10px 0;
+    height:3px;
+    width:250px;
+    background-color: #fff;
+    transition: all .2s;
+    
+}
+
+.main4{
+    height:120vh;
+    padding-top:10vh;
+}
+
+.main4 .content{
+    border:2px solid #47873d;
+    color:white;
+    background-color: #47873d;
+    box-shadow: 5px 5px 4px 1px black;
+    width: 28vw;
+    height:50vh;
+    margin-left:50vw;
+    padding:30px;
+    word-spacing: 2px;
+    font-size: larger ;
+    text-align: justify;
+}
+
+
+.main4 .content .img1{
+    position: relative;
+    width:30vw;
+}
+
+
+.main4 .content p{
+    margin-bottom: 20px;  
+}
+
+
+
+main .main4  i:hover{
+    padding-left: 10px;
+    transform: scale(2, .8);
+}
+
+
+
+.main5{
+    height:100vh;
+    margin-left:10vw;
+    width:80vw;
+}
+
+.main5 .content h1{
+    font-size: 25px;
+    padding-top: 5vh;
+    border-top:2px solid gray;
+}
+
+
+.main5 .content{
+    padding-top:30px;
+}
+.main5 .content p{
+    padding-top:30px;
+    border-bottom:1px solid #47873d;
+    font-weight: 2000;
+    font-size: xx-large;
+}
+
+.main6{
+    height:90vh;
+    background-color: #47873d ;
+}
+.main6 .content{
+    padding-left:10vw;
+    
+    padding-top:10vh;
+    font-size: xx-large;
+    text-align: justify;
+}
+.main6 .content .line{
+    width:80vw;
+    height:2px;
+    background-color:white;
+}
+.main6 .content p{
+    color:white;
+    padding-top:20px;
+}
+
+.main6 .content .left{
+    width:40vw ;
+    display:inline-block;
+}
+.main6 .content .right{
+    float:right;
+    margin-right:15vw;
+}
+.main6 .content .right i:hover{
+    padding-left: 10px;
+    transform: scale(2, .8);
+}
+
+
+/* .main6 .images img{
+    transition:all .2s;
+    height: 50vh;width: 18vw; position:relative;left:20vw;bottom:250px;top:10vh; margin-left:20px;
+    box-shadow: 5px 5px 4px 1px black;
+}
+
+
+.main6 .images img:hover{
+    cursor:pointer;
+    transform: rotateZ(30deg);
+    box-shadow: 10px 10px black;
+} */
+
+.main7{
+    height: 100vh;
+    margin-top:20vh;
+}
+
+.main7 .content{
+    margin-left: 10vw;
+    width:80vw;
+    border-top:1px solid gray;
+    padding-top:2vw;
+}
+
+.main7 .left p{
+    font-size: xx-large;
+    font-weight: 900;
+}
+.main7 .left{
+    display: inline-block;
+}
+
+
+.main7 .right{
+    text-align: justify;
+    font-size: larger;
+    width:25vw; 
+    float:right;
+}
+
+.main7 .rightdown{
+    padding-top: 3px;
+    border-top: 2px solid  #47873d;
+    /* margin-top: 20vh; */
+    margin-bottom:5vh;
+}
+
+
+.main7 .rightdown span{
+    color:#47873d;
+    margin-right: 10px;
+}
+
+.main7 .right h3{
+    font-weight: lighter;
+    border-top:2px solid gray;
+    padding:10px;
+}
+
+
+
+/* .main8{
+    height:100vh;
+    background-image: url(background1.jpg);
+    background-size: cover;
+} */
+
+
+
+.main9{
+    height:300vh;
+}
+
+.main9 .first .phlekaphla{
+    display: inline-block;
+    margin:10vh 0 0 20vh;
+    color:#000000;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+.main9 .first .phlekadusra{
+    position: relative;
+    float:right;
+    width:30vw;
+    text-align: justify;
+    top:10vh;
+    right:20vw;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+.main9 .second{
+    margin: 15vh 0 0 5vw;
+}
+
+.main9 .second  a{
+    color:#fff;
+    text-decoration: none;
+    font-size: larger;
+    padding:50px;
+}
+
+.main9 .box1, .box2, .box3, .box4{
+    height:80vh;
+    width:40vw;
+    margin-bottom: 10vh;
+    border:2px solid #76bf6a;
+    background-color: #76bf6a;
+}
+
+.main9 .box .para{
+     margin-top: 10vh;
+    font-size: larger; 
+}
+
+.main9 .second .box:hover{
+    background-color: #47873d;
+}
+
+
+.main9 .second .left{
+    display: inline-block;
+}
+.main9 .second .right{
+    float:right;
+    margin-right:10vw;
+}
+
+
+.main9 .box{
+    padding:10px;
+    transition: all .1s;
+}
+
+
+
+.main9 .third{
+    width:80vw;
+    margin-left:10vw;
+}
+
+
+.main9 .third img{
+    transition: all .2s;
+}
+
+.main9 .third img:hover{
+    cursor:pointer;
+    background-color: aqua;
+    transform:rotateZ(30deg);
+    box-shadow: 5px 10px black ;
+}
+.main9 .third p{
+    border-top: 2px solid gray;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: 900;
+}
+footer{
+    height:20vh;
+    background-color: #47873d;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+footer   .copyright1 {
+    font-size: larger;
+    padding-left: 20vh;
+}
+footer   .copyright1 p{
+    transition: all .5s;
+}
+footer   .copyright1 p:hover{
+    cursor:pointer;
+    color: gray;
+}
+footer a{
+
+    padding:20px;
+    color:#ffff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+footer a:hover{
+    color: gray;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+             <h1>Land Resources</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Uses</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+ 
+    </header>
+
+    <main>
+        <div class="main1">
+            <p>Let us take care of our <b>Land</b></p>
+        </div>
+        <div class="main2">
+            <div class="design1">
+            <h1>Design and Planting</h1>
+            <p>Balance</p>
+            <a href="#"><div class="x"></div></a>
+            <p>Lines and flow</p>
+            <a href="#"><div class="x"></div></a>
+            <p>Repetition</p>
+            <a href="#"><div class="x"></div></a>
+            <p>Contrast & Interest</p>
+            <a href="#"><div class="x"></div></a>
+            <p class = 'p2'>See More <i class="fa-sharp fa-solid fa-circle-arrow-right"></i></p>
+        
+            </div>
+            <div class="design2">
+            <h1>Design and Planting</h1>
+            <p class = 'p1'>Planting design is the art of arranging plants in a garden. There are many ways to approach it, and Werner's presentation explores four basic principles, presented in the form of four questions, that lead to a great design.</p>
+            <img src="https://wacolandscape.com/wp-content/uploads/2022/07/What-Are-The-Benefits-Of-Tree-Trimming.png">
+            <p class = 'p1'></p>
+            </div>
+        </div>
+
+        <div class="main7">
+            <div class="content">
+                <div class="left">
+                    <p>Why Landscaping Is Important</p>
+                    <img src="https://www.milwaukeetool.eu/getmedia/45e636a3-a7fc-433c-823e-93d695d8e758/Landscaping-7?width=600&height=400" style = 'width:45vw;height:60vh;margin-top:5vw;box-shadow: 5px 5px 4px 1px black;' alt="">
+                </div>
+                <div class="right"><p>Landscaping is when trees and other plants are brought in to create an area of beauty, whether it’s in a quiet neighborhood or a bustling city. Today, you can find impressive landscaping projects in the form of rooftop gardens, urban pocket parks, and backyard oases. Landscaping isn’t cheap, so why is it worth investing in? Here are some reasons why landscaping is important:</p>
+                <p class="rightdown"></p>
+                
+            <h3>Clean the Air</h3>
+            <h3>Stops Erosion</h3>
+            <h3>Manage Soil Pollution</h3>
+            <h3>Creat a Cooling Effect</h3>
+            <h3>Sustainability</h3>
+            <h3>Preserves the Environment</h3>
+        
+        
+        
+         </div>
+            </div>
+        </div> 
+        
+            <div class="third">
+                <center><p style="font-size: xx-large; font-weight: 900;">Our Gallery</p></center>
+                <div class="images1" style="margin-bottom: 5vh;margin-top:5vh;margin-left: 150px;">
+                    <img src="https://andrewslandscapingri.com/wp-content/uploads/2019/02/tree-trimming-pruning-services-header.jpg" style="height:20vh;width:19vw;" alt="">
+                    <img src="https://le-cdn.hibuwebsites.com/b96aa22267504f4994a2216f271df783/dms3rep/multi/opt/soob-img-1920w.jpg" style="height:20vh;width:19vw;" alt="">
+                    <img src="https://frontiertreeservices.com/wp-content/uploads/2022/06/Frontier-Tree-Services-Blog-4.png" style="height:20vh;width:19vw;" alt="">
+                    <img src="https://fairytaleofasimplegirl.files.wordpress.com/2020/03/butchart-gardens-.jpg?w=649&h=487" style="height:20vh;width:19vw;" alt="">
+                </div>
+                <div class="images2"style="margin-bottom: 5vh;margin-top:5vh;margin-left: 150px;">
+                    <img src="https://www.thetreecareguide.com/wp-content/uploads/tree-planting.jpg"  style = "height:20vh;width:19vw;" alt="">
+                    <img src="https://www.greenbloom.ca/wp-content/uploads/2018/10/mowing-the-lawn-1.jpg"  style = "height:20vh;width:19vw;" alt="">
+                    <img src="https://warnertreeservice.com/wp-content/uploads/2022/06/hedgetrimming2-1024x684.jpeg" style = "height:20vh;width:19vw;"  alt="">
+                    <img src="https://gardeningfan.com/wp-content/uploads/2019/09/watering-plants.jpg" style = "height:20vh;width:19vw;"  alt="">
+                </div>
+            </div>
+        
+        
+        </div>
+    </main>
+    <footer>
+        <div class="copyright1">
+            <p> &copy; Copyright 2022 Mobirise - All Rights Reserved</p>
+        </div>
+        <div class="copyright1">
+            <a href="#">Privacy Police</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
